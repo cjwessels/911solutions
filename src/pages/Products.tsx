@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import SEOHead from "@/components/SEOHead";
-import productSpray from "@/assets/product-spray.jpg";
-import productShampoo from "@/assets/product-shampoo.jpg";
-import productHairfood from "@/assets/product-hairfood.jpg";
-import productBeard from "@/assets/product-beard.jpg";
+import productSpray from "@/assets/product-spray.jpeg";
+import productShampoo from "@/assets/product-shampoo.jpeg";
+import productHairfood from "@/assets/product-hairfood.jpeg";
+import productBeard from "@/assets/product-beard.jpeg";
 
 const products = [
   {
