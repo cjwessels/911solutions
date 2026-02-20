@@ -67,7 +67,7 @@ const Index = () => {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="mb-6"
             >
-              <h1 className="text-6xl md:text-8xl font-display font-bold text-vibrant-green leading-tight mb-4">
+              <h1 className="text-6xl md:text-8xl font-display font-bold text-forest-green leading-tight mb-4">
                 911solutions
               </h1>
               <span className="inline-block text-beige text-lg md:text-xl font-medium tracking-wider">
