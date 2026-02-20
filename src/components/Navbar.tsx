@@ -21,7 +21,7 @@ const Navbar = () => {
             <Leaf className="w-6 h-6 text-white" />
           </div>
           <span className="font-display text-xl md:text-2xl font-bold text-foreground tracking-tight">
-            Cannabi<span className="text-vibrant-green">zlab</span>
+            Cannabiz<span className="text-vibrant-green">lab</span>
           </span>
         </Link>
 
