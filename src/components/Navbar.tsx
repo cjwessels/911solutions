@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Leaf } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
@@ -16,13 +16,12 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/50 shadow-sm">
       <nav className="container mx-auto flex items-center justify-between py-4 px-4 md:px-8">
-        <Link to="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-xl bg-vibrant-green flex items-center justify-center transition-transform group-hover:scale-110 duration-300">
-            <Leaf className="w-6 h-6 text-white" />
-          </div>
-          <span className="font-display text-xl md:text-2xl font-bold text-foreground tracking-tight">
-            Cannabiz<span className="text-vibrant-green">lab</span>
-          </span>
+        <Link to="/" className="flex items-center group">
+          <img
+            src="/Logo.png"
+            alt="Cannabizlab"
+            className="h-12 md:h-14 w-auto transition-transform group-hover:scale-105 duration-300"
+          />
         </Link>
 
         {/* Desktop Nav */}
