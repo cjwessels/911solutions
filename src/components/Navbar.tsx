@@ -20,7 +20,7 @@ const Navbar = () => {
           <img
             src="/Logo.png"
             alt="Cannabizlab"
-            style={{ height: '250px' }}
+            style={{ height: '100px' }}
             className="w-auto transition-transform group-hover:scale-105 duration-300"
           />
         </Link>
