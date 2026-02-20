@@ -70,7 +70,7 @@ const Index = () => {
               <h1 className="text-6xl md:text-8xl font-display font-bold text-forest-green leading-tight mb-4">
                 911solutions
               </h1>
-              <span className="inline-block text-beige text-lg md:text-xl font-medium tracking-wider">
+              <span className="inline-block text-vibrant-green text-lg md:text-xl font-medium tracking-wider">
                 Premium Cannabis & Mushroom Solutions
               </span>
             </motion.div>
