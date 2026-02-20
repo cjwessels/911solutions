@@ -15,12 +15,13 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/50 shadow-sm">
-      <nav className="container mx-auto flex items-center justify-between py-4 px-4 md:px-8">
+      <nav className="container mx-auto flex items-center justify-between py-1 px-4 md:px-8">
         <Link to="/" className="flex items-center group">
           <img
             src="/Logo.png"
             alt="Cannabizlab"
-            className="h-25 w-auto transition-transform group-hover:scale-105 duration-300"
+            style={{ height: '250px' }}
+            className="w-auto transition-transform group-hover:scale-105 duration-300"
           />
         </Link>
 
