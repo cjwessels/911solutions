@@ -1,36 +1,28 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Leaf, Sparkles, Shield, Zap } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
-import heroBg from "@/assets/hero-bg.jpg";
-import productSpray from "@/assets/product-spray.jpeg";
-import productShampoo from "@/assets/product-shampoo.jpeg";
-import productHairfood from "@/assets/product-hairfood.jpeg";
-import productBeard from "@/assets/product-beard.jpeg";
 
-const products = [
+const features = [
   {
-    name: "Anti-Breakage & Itch Spray",
-    description: "Soothes itchy scalps while supporting stronger, healthier hair growth.",
-    price: "R220",
-    image: productSpray,
+    icon: Leaf,
+    title: "Premium Quality",
+    description: "Carefully curated cannabis and mushroom products that meet the highest standards",
   },
   {
-    name: "2in1 Shampoo & Conditioner",
-    description: "Sulphate-free cleansing that protects moisture and reduces breakage.",
-    price: "R220",
-    image: productShampoo,
+    icon: Sparkles,
+    title: "Expert Selection",
+    description: "Handpicked strains and varieties for optimal experience and benefits",
   },
   {
-    name: "Hairfood",
-    description: "100% natural scalp treatment with coconut oil and rosemary for visible growth.",
-    price: "R220",
-    image: productHairfood,
+    icon: Shield,
+    title: "Safe & Secure",
+    description: "Age-verified platform ensuring responsible access to premium products",
   },
   {
-    name: "Beard Gel",
-    description: "Lightweight, non-greasy formula for neat, soft, and healthy facial hair.",
-    price: "R220",
-    image: productBeard,
+    icon: Zap,
+    title: "Fast Delivery",
+    description: "Quick and discreet delivery straight to your door",
   },
 ];
 
@@ -47,55 +39,86 @@ const Index = () => {
   return (
     <>
       <SEOHead
-        title="Organic Hair Care"
-        description="Nokkie's Cosmetics offers organic, sulphate-free hair care products including anti-breakage spray, shampoo, hairfood and beard gel. Natural ingredients for healthy, beautiful hair."
+        title="Premium Cannabis & Mushroom Solutions"
+        description="911solutions.co.za - Your trusted source for premium cannabis and mushroom products in South Africa. Quality, discretion, and expertise you can count on."
         path="/"
       />
 
-      {/* Hero */}
-      <section className="relative min-h-screen flex items-center pt-20">
-        <div className="absolute inset-0">
-          <img src={heroBg} alt="Nokkie's organic hair care products" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-hero" />
-        </div>
-        <div className="container relative mx-auto px-4 md:px-8 py-20">
+      <section className="relative min-h-screen flex items-center pt-20 bg-cannabis-pattern overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-forest-green/80 via-forest-green/60 to-dark-brown/80" />
+
+        <div className="container relative mx-auto px-4 md:px-8 py-20 z-10">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-2xl"
+            className="max-w-3xl mx-auto text-center"
           >
-            <span className="inline-block rounded-full bg-primary/10 px-4 py-1.5 text-xs font-semibold text-primary tracking-widest uppercase mb-6">
-              100% Natural &amp; Organic
-            </span>
-            <h1 className="text-5xl md:text-7xl font-display font-bold text-foreground leading-tight mb-6">
-              Nature's Gift for{" "}
-              <span className="text-gradient-gold">Beautiful Hair</span>
-            </h1>
-            <p className="text-lg text-muted-foreground max-w-lg mb-8 leading-relaxed">
-              Crafted with organic ingredients, our hair care range nourishes your scalp, reduces breakage, and supports healthy, visible growth — naturally.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Link
-                to="/products"
-                className="inline-flex items-center rounded-full bg-primary px-8 py-3.5 font-semibold text-primary-foreground transition-all hover:opacity-90 shadow-organic"
-              >
-                Explore Products
-              </Link>
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+              className="mb-6"
+            >
+              <h1 className="text-6xl md:text-8xl font-display font-bold text-vibrant-green leading-tight mb-4">
+                911solutions
+              </h1>
+              <span className="inline-block text-beige text-lg md:text-xl font-medium tracking-wider">
+                Premium Cannabis & Mushroom Solutions
+              </span>
+            </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+              className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed"
+            >
+              Discover South Africa's finest selection of premium cannabis and mushroom products.
+              Quality, expertise, and discretion - delivered right to your door.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.6 }}
+              className="flex flex-wrap justify-center gap-4"
+            >
               <a
-                href="https://shop.nokkiescosmetics.co.za"
+                href="https://shop.911solutions.co.za"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center rounded-full border-2 border-primary px-8 py-3.5 font-semibold text-primary transition-all hover:bg-primary hover:text-primary-foreground"
+                className="inline-flex items-center rounded-full bg-vibrant-green px-10 py-4 font-semibold text-white text-lg transition-all hover:bg-vibrant-green/90 shadow-xl hover:shadow-2xl hover:scale-105 transform duration-300"
               >
-                Shop Now
+                Visit Our Shop
               </a>
-            </div>
+              <Link
+                to="/contact"
+                className="inline-flex items-center rounded-full border-2 border-vibrant-green px-10 py-4 font-semibold text-vibrant-green text-lg transition-all hover:bg-vibrant-green hover:text-white transform hover:scale-105 duration-300"
+              >
+                Get In Touch
+              </Link>
+            </motion.div>
           </motion.div>
         </div>
+
+        <motion.div
+          animate={{
+            y: [0, -20, 0],
+          }}
+          transition={{
+            duration: 3,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-vibrant-green opacity-50"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </motion.div>
       </section>
 
-      {/* Featured Products */}
       <section className="py-24 bg-gradient-section">
         <div className="container mx-auto px-4 md:px-8">
           <motion.div
@@ -104,99 +127,94 @@ const Index = () => {
             viewport={{ once: true, margin: "-100px" }}
             className="text-center mb-16"
           >
-            <motion.span variants={fadeUp} custom={0} className="text-xs font-semibold text-primary tracking-widest uppercase">
-              Our Range
+            <motion.span
+              variants={fadeUp}
+              custom={0}
+              className="text-xs font-semibold text-vibrant-green tracking-widest uppercase"
+            >
+              Why Choose Us
             </motion.span>
-            <motion.h2 variants={fadeUp} custom={1} className="text-4xl md:text-5xl font-display font-bold text-foreground mt-3">
-              Best Sellers
+            <motion.h2
+              variants={fadeUp}
+              custom={1}
+              className="text-4xl md:text-5xl font-display font-bold text-foreground mt-3"
+            >
+              Your Trusted Partner
             </motion.h2>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {products.map((product, i) => (
+            {features.map((feature, i) => (
               <motion.div
-                key={product.name}
+                key={feature.title}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, margin: "-50px" }}
                 custom={i}
                 variants={fadeUp}
-                className="group bg-card rounded-2xl overflow-hidden shadow-organic transition-shadow hover:shadow-card-hover"
+                className="group bg-card rounded-2xl p-8 shadow-organic transition-all hover:shadow-card-hover hover:-translate-y-2 duration-300"
               >
-                <div className="aspect-square overflow-hidden">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    loading="lazy"
-                  />
+                <div className="w-14 h-14 rounded-xl bg-vibrant-green/10 flex items-center justify-center mb-6 group-hover:bg-vibrant-green/20 transition-colors duration-300">
+                  <feature.icon className="w-7 h-7 text-vibrant-green" />
                 </div>
-                <div className="p-6">
-                  <h3 className="font-display text-lg font-semibold text-foreground mb-2">{product.name}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-4">{product.description}</p>
-                  <div className="flex items-center justify-between">
-                    <span className="font-display text-xl font-bold text-primary">{product.price}</span>
-                    <a
-                      href="https://shop.nokkiescosmetics.co.za"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm font-semibold text-accent hover:text-primary transition-colors"
-                    >
-                      Buy Now →
-                    </a>
-                  </div>
-                </div>
+                <h3 className="font-display text-xl font-semibold text-foreground mb-3">
+                  {feature.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {feature.description}
+                </p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-24 bg-foreground">
-        <div className="container mx-auto px-4 md:px-8 text-center">
+      <section className="py-24 bg-forest-green relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-forest-green via-dark-brown/20 to-forest-green opacity-50" />
+
+        <div className="container relative mx-auto px-4 md:px-8 text-center z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-gold mb-6">
-              Ready for Healthier Hair?
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-vibrant-green mb-6">
+              Ready to Experience Quality?
             </h2>
-            <p className="text-background/60 max-w-lg mx-auto mb-8 leading-relaxed">
-              Join thousands who trust Nokkie's Cosmetics for their organic hair care routine. Natural ingredients, real results.
+            <p className="text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed text-lg">
+              Join thousands of satisfied customers who trust 911solutions for their premium cannabis
+              and mushroom needs. Quality products, expert service, total discretion.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="https://shop.nokkiescosmetics.co.za"
+                href="https://shop.911solutions.co.za"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center rounded-full bg-gold px-8 py-3.5 font-semibold text-foreground transition-all hover:opacity-90"
+                className="inline-flex items-center rounded-full bg-vibrant-green px-10 py-4 font-semibold text-white text-lg transition-all hover:bg-vibrant-green/90 shadow-xl hover:shadow-2xl hover:scale-105 transform duration-300"
               >
-                Visit Our Shop
+                Browse Products
               </a>
               <Link
-                to="/contact"
-                className="inline-flex items-center rounded-full border-2 border-gold px-8 py-3.5 font-semibold text-gold transition-all hover:bg-gold hover:text-foreground"
+                to="/about"
+                className="inline-flex items-center rounded-full border-2 border-vibrant-green px-10 py-4 font-semibold text-vibrant-green text-lg transition-all hover:bg-vibrant-green hover:text-white transform hover:scale-105 duration-300"
               >
-                Get In Touch
+                Learn More
               </Link>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Schema.org JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "Nokkie's Cosmetics",
-            url: "https://nokkiescosmetics.co.za",
-            description: "Organic hair care products made with natural ingredients for healthy, beautiful hair.",
+            name: "911solutions",
+            url: "https://911solutions.co.za",
+            description: "Premium cannabis and mushroom products in South Africa.",
             sameAs: [],
           }),
         }}

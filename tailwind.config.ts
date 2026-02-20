@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Playfair Display"', 'serif'],
-        body: ['"Nunito Sans"', 'sans-serif'],
+        display: ['"Poppins"', 'sans-serif'],
+        body: ['"Inter"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -51,18 +51,11 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        gold: {
-          DEFAULT: "hsl(var(--gold))",
-          light: "hsl(var(--gold-light))",
-        },
-        charcoal: "hsl(var(--charcoal))",
-        cream: "hsl(var(--cream))",
-        sage: {
-          DEFAULT: "hsl(var(--sage))",
-          light: "hsl(var(--sage-light))",
-        },
-        "warm-brown": "hsl(var(--warm-brown))",
-        "autumn-orange": "hsl(var(--autumn-orange))",
+        "forest-green": "hsl(var(--forest-green))",
+        "vibrant-green": "hsl(var(--vibrant-green))",
+        beige: "hsl(var(--beige))",
+        "earth-brown": "hsl(var(--earth-brown))",
+        "dark-brown": "hsl(var(--dark-brown))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

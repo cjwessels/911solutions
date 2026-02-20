@@ -7,8 +7,8 @@ import { HelmetProvider } from "react-helmet-async";
 import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import AgeVerification from "./components/AgeVerification";
 import Index from "./pages/Index";
-import Products from "./pages/Products";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -21,20 +21,21 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
-          <ScrollToTop />
-          <Navbar />
-          <main>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/products" element={<Products />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </main>
-          <Footer />
-        </BrowserRouter>
+        <AgeVerification>
+          <BrowserRouter>
+            <ScrollToTop />
+            <Navbar />
+            <main>
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </main>
+            <Footer />
+          </BrowserRouter>
+        </AgeVerification>
       </TooltipProvider>
     </QueryClientProvider>
   </HelmetProvider>
