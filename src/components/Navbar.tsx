@@ -42,7 +42,7 @@ const Navbar = () => {
             href="https://shop.911solutions.co.za"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-vibrant-green px-6 py-2.5 text-sm font-semibold text-white transition-all hover:bg-vibrant-green/90 shadow-md hover:shadow-lg transform hover:scale-105 duration-300"
+            className="inline-flex items-center gap-2 rounded-full bg-forest-green px-6 py-2.5 text-sm font-semibold text-vibrant-green border-2 border-vibrant-green transition-all hover:bg-vibrant-green hover:text-white shadow-md hover:shadow-lg transform hover:scale-105 duration-300"
           >
             Shop Now
           </a>
@@ -84,7 +84,7 @@ const Navbar = () => {
                 href="https://shop.911solutions.co.za"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-vibrant-green px-6 py-3 text-sm font-semibold text-white shadow-md"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-forest-green px-6 py-3 text-sm font-semibold text-vibrant-green border-2 border-vibrant-green shadow-md"
               >
                 Shop Now
               </a>

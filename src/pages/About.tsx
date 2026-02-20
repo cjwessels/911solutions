@@ -99,8 +99,17 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mt-24 text-center bg-forest-green rounded-3xl p-12 md:p-16"
+            className="mt-24 text-center bg-forest-green rounded-3xl p-12 md:p-16 relative overflow-hidden"
           >
+            <div className="absolute inset-0">
+              <img
+                src="https://images.pexels.com/photos/7667422/pexels-photo-7667422.jpeg?auto=compress&cs=tinysrgb&w=1920"
+                alt="Cannabis plants"
+                className="w-full h-full object-cover opacity-15 blur-md"
+              />
+              <div className="absolute inset-0 bg-forest-green/60" />
+            </div>
+            <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-vibrant-green mb-6">
               Why Choose 911solutions?
             </h2>
@@ -115,6 +124,7 @@ const About = () => {
             >
               Browse Our Products
             </a>
+            </div>
           </motion.div>
         </div>
       </section>

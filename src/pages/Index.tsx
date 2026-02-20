@@ -44,8 +44,15 @@ const Index = () => {
         path="/"
       />
 
-      <section className="relative min-h-screen flex items-center pt-20 bg-cannabis-pattern overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-forest-green/80 via-forest-green/60 to-dark-brown/80" />
+      <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="https://images.pexels.com/photos/3049121/pexels-photo-3049121.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            alt="Cannabis background"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-forest-green/90 via-forest-green/85 to-dark-brown/90 backdrop-blur-sm" />
+        </div>
 
         <div className="container relative mx-auto px-4 md:px-8 py-20 z-10">
           <motion.div
@@ -119,8 +126,23 @@ const Index = () => {
         </motion.div>
       </section>
 
-      <section className="py-24 bg-gradient-section">
-        <div className="container mx-auto px-4 md:px-8">
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-section" />
+        <div className="absolute top-0 right-0 w-1/3 h-full opacity-10">
+          <img
+            src="https://images.pexels.com/photos/6896379/pexels-photo-6896379.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Mushrooms"
+            className="w-full h-full object-cover blur-xl"
+          />
+        </div>
+        <div className="absolute bottom-0 left-0 w-1/3 h-full opacity-10">
+          <img
+            src="https://images.pexels.com/photos/7667443/pexels-photo-7667443.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Cannabis leaf"
+            className="w-full h-full object-cover blur-xl"
+          />
+        </div>
+        <div className="container relative mx-auto px-4 md:px-8 z-10">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -170,7 +192,14 @@ const Index = () => {
       </section>
 
       <section className="py-24 bg-forest-green relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-forest-green via-dark-brown/20 to-forest-green opacity-50" />
+        <div className="absolute inset-0">
+          <img
+            src="https://images.pexels.com/photos/8411369/pexels-photo-8411369.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            alt="Cannabis and mushrooms"
+            className="w-full h-full object-cover opacity-20 blur-sm"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-forest-green/80 via-dark-brown/60 to-forest-green/80" />
+        </div>
 
         <div className="container relative mx-auto px-4 md:px-8 text-center z-10">
           <motion.div
