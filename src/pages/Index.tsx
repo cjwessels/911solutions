@@ -49,7 +49,7 @@ const Index = () => {
           <img
             src="/Banner.png"
             alt="911solutions cannabis lifestyle"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover blur-sm"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-forest-green/85 via-forest-green/75 to-dark-brown/85" />
         </div>
