@@ -51,7 +51,7 @@ const Index = () => {
             alt="911solutions cannabis lifestyle"
             className="w-full h-full object-cover blur-sm"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-forest-green/85 via-forest-green/75 to-dark-brown/85" />
+          <div className="absolute inset-0 bg-gradient-to-br from-forest-green/95 via-dark-brown/90 to-forest-green/95" />
         </div>
 
         <div className="container relative mx-auto px-4 md:px-8 py-20 z-10">
