@@ -11,7 +11,7 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-xl bg-vibrant-green flex items-center justify-center">
                 <Leaf className="w-6 h-6 text-white" />
               </div>
-              <span className="font-display text-lg font-semibold text-vibrant-green">911solutions</span>
+              <span className="font-display text-lg font-semibold text-vibrant-green">Cannabizlab</span>
             </div>
             <p className="text-sm text-white/60 leading-relaxed">
               South Africa's trusted source for premium cannabis and mushroom products. Quality, discretion, expertise.
@@ -31,7 +31,7 @@ const Footer = () => {
             <h4 className="font-display text-sm font-semibold text-vibrant-green mb-4">Shop</h4>
             <div className="flex flex-col gap-2">
               <a
-                href="https://shop.911solutions.co.za"
+                href="https://shop.cannabizlab.co.za"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-white/60 hover:text-vibrant-green transition-colors"
@@ -39,7 +39,7 @@ const Footer = () => {
                 Cannabis Products
               </a>
               <a
-                href="https://shop.911solutions.co.za"
+                href="https://shop.cannabizlab.co.za"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-white/60 hover:text-vibrant-green transition-colors"
@@ -47,7 +47,7 @@ const Footer = () => {
                 Mushroom Products
               </a>
               <a
-                href="https://shop.911solutions.co.za"
+                href="https://shop.cannabizlab.co.za"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-white/60 hover:text-vibrant-green transition-colors"
@@ -60,7 +60,7 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-sm font-semibold text-vibrant-green mb-4">Contact</h4>
             <div className="flex flex-col gap-2 text-sm text-white/60">
-              <span>info@911solutions.co.za</span>
+              <span>info@cannabizlab.co.za</span>
               <span>South Africa</span>
               <div className="mt-4">
                 <p className="text-xs text-white/40">
@@ -73,7 +73,7 @@ const Footer = () => {
 
         <div className="border-t border-white/10 mt-12 pt-8 text-center">
           <p className="text-xs text-white/40">
-            © {new Date().getFullYear()} 911solutions. All rights reserved.
+            © {new Date().getFullYear()} Cannabizlab. All rights reserved.
           </p>
         </div>
       </div>

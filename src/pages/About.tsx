@@ -31,7 +31,7 @@ const About = () => {
     <>
       <SEOHead
         title="About Us"
-        description="Learn about 911solutions — South Africa's trusted provider of premium cannabis and mushroom products. Quality, expertise, and discretion you can count on."
+        description="Learn about Cannabizlab — South Africa's trusted provider of premium cannabis and mushroom products. Quality, expertise, and discretion you can count on."
         path="/about"
       />
 
@@ -50,7 +50,7 @@ const About = () => {
                 <span className="text-vibrant-green">Trusted Service</span>
               </h1>
               <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-                911solutions was founded with a clear mission: to provide South Africans with safe, reliable access to premium cannabis and mushroom products.
+                Cannabizlab was founded with a clear mission: to provide South Africans with safe, reliable access to premium cannabis and mushroom products.
               </p>
               <p className="text-muted-foreground leading-relaxed text-lg mb-6">
                 We understand the importance of quality, discretion, and expertise. That's why we've built a platform you can trust, with carefully curated products, secure transactions, and knowledgeable support every step of the way.
@@ -111,13 +111,13 @@ const About = () => {
             </div>
             <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-vibrant-green mb-6">
-              Why Choose 911solutions?
+              Why Choose Cannabizlab?
             </h2>
             <p className="text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed text-lg">
               We're committed to providing you with the highest quality products, expert guidance, and a seamless shopping experience. Your satisfaction and safety are our top priorities.
             </p>
             <a
-              href="https://shop.911solutions.co.za"
+              href="https://shop.cannabizlab.co.za"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center rounded-full bg-vibrant-green px-10 py-4 font-semibold text-white text-lg transition-all hover:bg-vibrant-green/90 shadow-xl hover:shadow-2xl hover:scale-105 transform duration-300"

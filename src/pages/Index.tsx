@@ -40,7 +40,7 @@ const Index = () => {
     <>
       <SEOHead
         title="Premium Cannabis & Mushroom Solutions"
-        description="911solutions.co.za - Your trusted source for premium cannabis and mushroom products in South Africa. Quality, discretion, and expertise you can count on."
+        description="Cannabizlab - Your trusted source for premium cannabis and mushroom products in South Africa. Quality, discretion, and expertise you can count on."
         path="/"
       />
 
@@ -48,7 +48,7 @@ const Index = () => {
         <div className="absolute inset-0">
           <img
             src="/Banner.png"
-            alt="911solutions cannabis lifestyle"
+            alt="Cannabizlab cannabis lifestyle"
             className="w-full h-full object-cover blur-sm"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-forest-green/95 via-dark-brown/90 to-forest-green/95" />
@@ -68,7 +68,7 @@ const Index = () => {
               className="mb-6"
             >
               <h1 className="text-6xl md:text-8xl font-display font-bold text-forest-green leading-tight mb-4">
-                911solutions
+                Cannabizlab
               </h1>
               <span className="inline-block text-vibrant-green text-lg md:text-xl font-medium tracking-wider">
                 Premium Cannabis & Mushroom Solutions
@@ -92,7 +92,7 @@ const Index = () => {
               className="flex flex-wrap justify-center gap-4"
             >
               <a
-                href="https://shop.911solutions.co.za"
+                href="https://shop.cannabizlab.co.za"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center rounded-full bg-vibrant-green px-10 py-4 font-semibold text-white text-lg transition-all hover:bg-vibrant-green/90 shadow-xl hover:shadow-2xl hover:scale-105 transform duration-300"
@@ -212,12 +212,12 @@ const Index = () => {
               Ready to Experience Quality?
             </h2>
             <p className="text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed text-lg">
-              Join thousands of satisfied customers who trust 911solutions for their premium cannabis
+              Join thousands of satisfied customers who trust Cannabizlab for their premium cannabis
               and mushroom needs. Quality products, expert service, total discretion.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="https://shop.911solutions.co.za"
+                href="https://shop.cannabizlab.co.za"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center rounded-full bg-vibrant-green px-10 py-4 font-semibold text-white text-lg transition-all hover:bg-vibrant-green/90 shadow-xl hover:shadow-2xl hover:scale-105 transform duration-300"
@@ -241,8 +241,8 @@ const Index = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "911solutions",
-            url: "https://911solutions.co.za",
+            name: "Cannabizlab",
+            url: "https://cannabizlab.co.za",
             description: "Premium cannabis and mushroom products in South Africa.",
             sameAs: [],
           }),

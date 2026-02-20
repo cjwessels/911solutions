@@ -66,7 +66,7 @@ const Contact = () => {
     <>
       <SEOHead
         title="Contact Us"
-        description="Get in touch with 911solutions. Whether you're interested in our products, wholesale opportunities, or just have questions — we're here to help."
+        description="Get in touch with Cannabizlab. Whether you're interested in our products, wholesale opportunities, or just have questions — we're here to help."
         path="/contact"
       />
 
@@ -179,8 +179,8 @@ const Contact = () => {
           >
             <p className="text-sm text-muted-foreground">
               You can also reach us at{" "}
-              <a href="mailto:info@911solutions.co.za" className="text-vibrant-green hover:underline font-medium">
-                info@911solutions.co.za
+              <a href="mailto:info@cannabizlab.co.za" className="text-vibrant-green hover:underline font-medium">
+                info@cannabizlab.co.za
               </a>
             </p>
           </motion.div>

@@ -21,7 +21,7 @@ const Navbar = () => {
             <Leaf className="w-6 h-6 text-white" />
           </div>
           <span className="font-display text-xl md:text-2xl font-bold text-foreground tracking-tight">
-            911<span className="text-vibrant-green">solutions</span>
+            Cannabi<span className="text-vibrant-green">zlab</span>
           </span>
         </Link>
 
@@ -39,7 +39,7 @@ const Navbar = () => {
             </Link>
           ))}
           <a
-            href="https://shop.911solutions.co.za"
+            href="https://shop.cannabizlab.co.za"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-forest-green px-6 py-2.5 text-sm font-semibold text-vibrant-green border-2 border-vibrant-green transition-all hover:bg-vibrant-green hover:text-white shadow-md hover:shadow-lg transform hover:scale-105 duration-300"
@@ -81,7 +81,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <a
-                href="https://shop.911solutions.co.za"
+                href="https://shop.cannabizlab.co.za"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-forest-green px-6 py-3 text-sm font-semibold text-vibrant-green border-2 border-vibrant-green shadow-md"
