@@ -47,11 +47,11 @@ const Index = () => {
       <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/3049121/pexels-photo-3049121.jpeg?auto=compress&cs=tinysrgb&w=1920"
-            alt="Cannabis background"
+            src="/Banner.png"
+            alt="911solutions cannabis lifestyle"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-forest-green/90 via-forest-green/85 to-dark-brown/90 backdrop-blur-sm" />
+          <div className="absolute inset-0 bg-gradient-to-br from-forest-green/85 via-forest-green/75 to-dark-brown/85" />
         </div>
 
         <div className="container relative mx-auto px-4 md:px-8 py-20 z-10">
