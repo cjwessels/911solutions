@@ -52,7 +52,7 @@ const AgeVerification = ({ children }: { children: React.ReactNode }) => {
               transition={{ delay: 0.3 }}
               className="space-y-2"
             >
-              <h1 className="text-4xl font-bold text-[#50C878]">911solutions</h1>
+              <h1 className="text-4xl font-bold text-[#50C878]">Cannabizlab</h1>
               <p className="text-[#E5D1B1] text-sm tracking-wider">Premium Cannabis & Mushroom Solutions</p>
             </motion.div>
 
