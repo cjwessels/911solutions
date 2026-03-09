@@ -68,7 +68,15 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-sm font-bold text-lime-green mb-4 uppercase">Contact</h4>
             <div className="flex flex-col gap-2 text-sm text-cream/70">
-              <span>info@cannabizlab.co.za</span>
+              <a href="tel:0717674639" className="hover:text-lime-green transition-colors">
+                071 767 4639
+              </a>
+              <a href="https://wa.me/27717674639" target="_blank" rel="noopener noreferrer" className="hover:text-lime-green transition-colors">
+                WhatsApp
+              </a>
+              <a href="mailto:info@cannabizlab.co.za" className="hover:text-lime-green transition-colors">
+                info@cannabizlab.co.za
+              </a>
               <span>South Africa</span>
               <div className="mt-4">
                 <p className="text-xs text-cream/50">

@@ -175,12 +175,22 @@ const Contact = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
-            className="mt-12 text-center"
+            className="mt-12 text-center space-y-3"
           >
             <p className="text-sm text-muted-foreground">
               You can also reach us at{" "}
-              <a href="mailto:info@cannabizlab.co.za" className="text-vibrant-green hover:underline font-medium">
+              <a href="mailto:info@cannabizlab.co.za" className="text-lime-green hover:underline font-medium">
                 info@cannabizlab.co.za
+              </a>
+            </p>
+            <p className="text-sm text-muted-foreground">
+              Call or WhatsApp:{" "}
+              <a href="tel:0717674639" className="text-lime-green hover:underline font-medium">
+                071 767 4639
+              </a>
+              {" "}|{" "}
+              <a href="https://wa.me/27717674639" target="_blank" rel="noopener noreferrer" className="text-lime-green hover:underline font-medium">
+                WhatsApp
               </a>
             </p>
           </motion.div>
