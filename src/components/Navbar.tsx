@@ -14,7 +14,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/50 shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-space-dark/98 backdrop-blur-md border-b border-lime-green/20 shadow-lg">
       <nav className="container mx-auto flex items-center justify-between py-1 px-4 md:px-8">
         <Link to="/" className="flex items-center group">
           <img
@@ -31,8 +31,8 @@ const Navbar = () => {
             <Link
               key={item.path}
               to={item.path}
-              className={`font-body text-sm font-medium tracking-wide transition-colors hover:text-vibrant-green ${
-                location.pathname === item.path ? "text-vibrant-green" : "text-muted-foreground"
+              className={`font-body text-sm font-bold tracking-wide uppercase transition-colors hover:text-lime-green ${
+                location.pathname === item.path ? "text-lime-green" : "text-cream/80"
               }`}
             >
               {item.label}
@@ -42,7 +42,7 @@ const Navbar = () => {
             href="https://shop.cannabizlab.co.za"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-forest-green px-6 py-2.5 text-sm font-semibold text-vibrant-green border-2 border-vibrant-green transition-all hover:bg-vibrant-green hover:text-white shadow-md hover:shadow-lg transform hover:scale-105 duration-300"
+            className="inline-flex items-center gap-2 rounded-full bg-lime-green px-6 py-2.5 text-sm font-bold text-space-dark uppercase transition-all hover:bg-lime-green/90 shadow-md hover:shadow-lg transform hover:scale-105 duration-300"
           >
             Shop Now
           </a>
@@ -51,7 +51,7 @@ const Navbar = () => {
         {/* Mobile toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-2 text-foreground"
+          className="md:hidden p-2 text-lime-green"
           aria-label="Toggle menu"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -65,7 +65,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-background border-b border-border overflow-hidden"
+            className="md:hidden bg-space-dark border-b border-lime-green/20 overflow-hidden"
           >
             <div className="flex flex-col gap-4 p-6">
               {navItems.map((item) => (
@@ -73,8 +73,8 @@ const Navbar = () => {
                   key={item.path}
                   to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className={`font-body text-base font-medium transition-colors hover:text-vibrant-green ${
-                    location.pathname === item.path ? "text-vibrant-green" : "text-muted-foreground"
+                  className={`font-body text-base font-bold uppercase transition-colors hover:text-lime-green ${
+                    location.pathname === item.path ? "text-lime-green" : "text-cream/80"
                   }`}
                 >
                   {item.label}
@@ -84,7 +84,7 @@ const Navbar = () => {
                 href="https://shop.cannabizlab.co.za"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-forest-green px-6 py-3 text-sm font-semibold text-vibrant-green border-2 border-vibrant-green shadow-md"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-lime-green px-6 py-3 text-sm font-bold text-space-dark uppercase shadow-md"
               >
                 Shop Now
               </a>

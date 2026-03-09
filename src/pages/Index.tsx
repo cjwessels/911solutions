@@ -44,15 +44,8 @@ const Index = () => {
         path="/"
       />
 
-      <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="/Banner.png"
-            alt="Cannabizlab cannabis lifestyle"
-            className="w-full h-full object-cover blur-sm"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-forest-green/95 via-dark-brown/90 to-forest-green/95" />
-        </div>
+      <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-space-stars smoke-effect">
+        <div className="absolute inset-0 bg-gradient-hero" />
 
         <div className="container relative mx-auto px-4 md:px-8 py-20 z-10">
           <motion.div
@@ -67,11 +60,11 @@ const Index = () => {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="mb-6"
             >
-              <h1 className="text-6xl md:text-8xl font-display font-bold text-forest-green leading-tight mb-4">
-                Cannabizlab
+              <h1 className="text-6xl md:text-8xl font-display font-bold text-gradient-gold leading-tight mb-4" style={{ WebkitTextStroke: '1px rgba(255, 215, 0, 0.3)' }}>
+                CANNABIZLAB
               </h1>
-              <span className="inline-block text-vibrant-green text-lg md:text-xl font-medium tracking-wider">
-                Premium Cannabis & Mushroom Solutions
+              <span className="inline-block text-lime-green text-lg md:text-2xl font-bold tracking-wider uppercase">
+                High Maintenance
               </span>
             </motion.div>
 
@@ -79,10 +72,10 @@ const Index = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed"
+              className="text-lg md:text-xl text-cream/90 max-w-2xl mx-auto mb-10 leading-relaxed"
             >
-              Discover South Africa's finest selection of premium cannabis and mushroom products.
-              Quality, expertise, and discretion - delivered right to your door.
+              We are now delivering premium cannabis and mushroom products straight to your door.
+              Fast, discreet, and delivered within 30 minutes.
             </motion.p>
 
             <motion.div
@@ -95,15 +88,15 @@ const Index = () => {
                 href="https://shop.cannabizlab.co.za"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center rounded-full bg-vibrant-green px-10 py-4 font-semibold text-white text-lg transition-all hover:bg-vibrant-green/90 shadow-xl hover:shadow-2xl hover:scale-105 transform duration-300"
+                className="inline-flex items-center rounded-full bg-lime-green px-10 py-4 font-bold text-space-dark text-lg transition-all hover:bg-lime-green/90 shadow-xl hover:shadow-2xl hover:scale-105 transform duration-300 uppercase"
               >
-                Visit Our Shop
+                Shop Now
               </a>
               <Link
                 to="/contact"
-                className="inline-flex items-center rounded-full border-2 border-vibrant-green px-10 py-4 font-semibold text-vibrant-green text-lg transition-all hover:bg-vibrant-green hover:text-white transform hover:scale-105 duration-300"
+                className="inline-flex items-center rounded-full border-2 border-gold px-10 py-4 font-bold text-gold text-lg transition-all hover:bg-gold hover:text-space-dark transform hover:scale-105 duration-300 uppercase"
               >
-                Get In Touch
+                Contact Us
               </Link>
             </motion.div>
           </motion.div>
@@ -118,7 +111,7 @@ const Index = () => {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-vibrant-green opacity-50"
+          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-lime-green opacity-50"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <polyline points="6 9 12 15 18 9"></polyline>
@@ -126,22 +119,8 @@ const Index = () => {
         </motion.div>
       </section>
 
-      <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-section" />
-        <div className="absolute top-0 right-0 w-1/3 h-full opacity-10">
-          <img
-            src="https://images.pexels.com/photos/6896379/pexels-photo-6896379.jpeg?auto=compress&cs=tinysrgb&w=800"
-            alt="Mushrooms"
-            className="w-full h-full object-cover blur-xl"
-          />
-        </div>
-        <div className="absolute bottom-0 left-0 w-1/3 h-full opacity-10">
-          <img
-            src="https://images.pexels.com/photos/7667443/pexels-photo-7667443.jpeg?auto=compress&cs=tinysrgb&w=800"
-            alt="Cannabis leaf"
-            className="w-full h-full object-cover blur-xl"
-          />
-        </div>
+      <section className="relative py-24 overflow-hidden bg-gradient-section smoke-effect">
+        <div className="absolute inset-0 bg-space-stars opacity-50" />
         <div className="container relative mx-auto px-4 md:px-8 z-10">
           <motion.div
             initial="hidden"
@@ -152,14 +131,14 @@ const Index = () => {
             <motion.span
               variants={fadeUp}
               custom={0}
-              className="text-xs font-semibold text-vibrant-green tracking-widest uppercase"
+              className="text-xs font-bold text-lime-green tracking-widest uppercase"
             >
               Why Choose Us
             </motion.span>
             <motion.h2
               variants={fadeUp}
               custom={1}
-              className="text-4xl md:text-5xl font-display font-bold text-foreground mt-3"
+              className="text-4xl md:text-5xl font-display font-bold text-gold mt-3"
             >
               Your Trusted Partner
             </motion.h2>
@@ -174,15 +153,15 @@ const Index = () => {
                 viewport={{ once: true, margin: "-50px" }}
                 custom={i}
                 variants={fadeUp}
-                className="group bg-card rounded-2xl p-8 shadow-organic transition-all hover:shadow-card-hover hover:-translate-y-2 duration-300"
+                className="group bg-card rounded-2xl p-8 shadow-organic transition-all hover:shadow-card-hover hover:-translate-y-2 duration-300 border border-lime-green/20"
               >
-                <div className="w-14 h-14 rounded-xl bg-vibrant-green/10 flex items-center justify-center mb-6 group-hover:bg-vibrant-green/20 transition-colors duration-300">
-                  <feature.icon className="w-7 h-7 text-vibrant-green" />
+                <div className="w-14 h-14 rounded-xl bg-lime-green/20 flex items-center justify-center mb-6 group-hover:bg-lime-green/30 transition-colors duration-300">
+                  <feature.icon className="w-7 h-7 text-lime-green" />
                 </div>
-                <h3 className="font-display text-xl font-semibold text-foreground mb-3">
+                <h3 className="font-display text-xl font-bold text-gold mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-cream/80 leading-relaxed">
                   {feature.description}
                 </p>
               </motion.div>
@@ -191,15 +170,8 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-24 bg-forest-green relative overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="https://images.pexels.com/photos/8411369/pexels-photo-8411369.jpeg?auto=compress&cs=tinysrgb&w=1920"
-            alt="Cannabis and mushrooms"
-            className="w-full h-full object-cover opacity-20 blur-sm"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-forest-green/80 via-dark-brown/60 to-forest-green/80" />
-        </div>
+      <section className="py-24 bg-space-stars relative overflow-hidden smoke-effect">
+        <div className="absolute inset-0 bg-gradient-hero" />
 
         <div className="container relative mx-auto px-4 md:px-8 text-center z-10">
           <motion.div
@@ -208,25 +180,25 @@ const Index = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-vibrant-green mb-6">
-              Ready to Experience Quality?
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-gradient-gold mb-6">
+              Online Store Opening Soon!
             </h2>
-            <p className="text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed text-lg">
-              Join thousands of satisfied customers who trust Cannabizlab for their premium cannabis
-              and mushroom needs. Quality products, expert service, total discretion.
+            <p className="text-cream/90 max-w-2xl mx-auto mb-10 leading-relaxed text-lg">
+              Orders over R1000 get FREE delivery. Delivery within 30 minutes.
+              Best Bud, Pre-Rolls, Vapes, and Edibles available now.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
                 href="https://shop.cannabizlab.co.za"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center rounded-full bg-vibrant-green px-10 py-4 font-semibold text-white text-lg transition-all hover:bg-vibrant-green/90 shadow-xl hover:shadow-2xl hover:scale-105 transform duration-300"
+                className="inline-flex items-center rounded-full bg-lime-green px-10 py-4 font-bold text-space-dark text-lg transition-all hover:bg-lime-green/90 shadow-xl hover:shadow-2xl hover:scale-105 transform duration-300 uppercase"
               >
                 Browse Products
               </a>
               <Link
                 to="/about"
-                className="inline-flex items-center rounded-full border-2 border-vibrant-green px-10 py-4 font-semibold text-vibrant-green text-lg transition-all hover:bg-vibrant-green hover:text-white transform hover:scale-105 duration-300"
+                className="inline-flex items-center rounded-full border-2 border-gold px-10 py-4 font-bold text-gold text-lg transition-all hover:bg-gold hover:text-space-dark transform hover:scale-105 duration-300 uppercase"
               >
                 Learn More
               </Link>
