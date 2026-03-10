@@ -85,14 +85,14 @@ const AgeVerification = ({ children }: { children: React.ReactNode }) => {
             >
               <Button
                 onClick={() => handleVerify(true)}
-                className="flex-1 bg-lime-green hover:bg-lime-green/90 text-space-dark font-bold py-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-lime-green/30 uppercase"
+                className="flex-1 bg-lime-green hover:bg-lime-green/90 text-space-dark font-bold py-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-lime-green/30 uppercase z-50"
               >
                 I am 18 or older
               </Button>
               <Button
                 onClick={() => handleVerify(false)}
                 variant="outline"
-                className="flex-1 border-2 border-gold text-gold hover:bg-gold/10 font-bold py-6 rounded-xl transition-all duration-300 uppercase"
+                className="flex-1 border-2 border-gold text-gold hover:bg-gold/10 font-bold py-6 rounded-xl transition-all duration-300 uppercase z-50"
               >
                 I am under 18
               </Button>
